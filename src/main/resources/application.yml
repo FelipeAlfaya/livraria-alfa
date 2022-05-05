@@ -10,9 +10,4 @@ spring:
     hibernate:
       ddl-auto: update
   thymeleaf:
-    cache: false
-    mode: HTML
-    encoding: UTF-8
-  resources:
-    cache:
-      period: 0
+    enabled: false

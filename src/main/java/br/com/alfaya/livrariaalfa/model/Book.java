@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -23,4 +25,8 @@ public class Book {
   private String isbn10;
   private String isbn13;
   private Integer pagesLength;
+
+  @ManyToOne
+  @JoinColumn(name = "book_id")
+  private Publisher publisher;
 }
