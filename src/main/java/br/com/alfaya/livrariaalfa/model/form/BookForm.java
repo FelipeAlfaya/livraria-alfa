@@ -7,7 +7,6 @@ import br.com.alfaya.livrariaalfa.model.Publisher;
 import br.com.alfaya.livrariaalfa.repository.PublisherRepository;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
